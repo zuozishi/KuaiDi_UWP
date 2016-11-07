@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="KuaiDi.IndexPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KuaiDi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <SplitView x:Name="splitView" OpenPaneLength="150" CompactPaneLength="50" PaneBackground="{ThemeResource KD_main_Color}" DisplayMode="CompactOverlay">
+            <SplitView.Pane>
+                <ListBox x:Name="listBox" SelectedIndex="0" Background="{ThemeResource KD_main_Color}" Margin="0,50,0,0" SelectionChanged="listBox_SelectionChanged">
+                    <ListBoxItem Padding="0">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Width="50" Height="50" Symbol="Home"></SymbolIcon>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">主页</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Padding="0">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Width="50" Height="50" Symbol="Setting"></SymbolIcon>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">设置</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Padding="0">
+                        <StackPanel Orientation="Horizontal">
+                            <SymbolIcon Width="50" Height="50" Symbol="ReportHacked"></SymbolIcon>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center">关于</TextBlock>
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+            <Frame x:Name="mainFrame"></Frame>
+        </SplitView>
+        <Button Width="50" Height="50" Background="{ThemeResource KD_main_Color}" VerticalAlignment="Top" Click="splitViewOpenClicked">
+            <FontIcon Margin="-10,-6" Width="50" Height="50" FontFamily="Segoe MDL2 Assets" Glyph="&#xE700;"/>
+        </Button>
+    </Grid>
+</Page>

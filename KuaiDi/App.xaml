@@ -1,0 +1,23 @@
+﻿<Application
+    x:Class="KuaiDi.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KuaiDi"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="KD_main_Color" Color="#FFEE5858"/>
+                    <SolidColorBrush x:Key="KD_system_Color" Color="{ThemeResource SystemAccentColor}"/>
+                    <!--主调颜色-->
+                </ResourceDictionary>
+                <ResourceDictionary x:Key="Dark">
+                    <SolidColorBrush x:Key="KD_main_Color" Color="#FFEE5858"/>
+                    <SolidColorBrush x:Key="KD_system_Color" Color="{ThemeResource SystemAccentColor}"/>
+                    <!--主调颜色-->
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

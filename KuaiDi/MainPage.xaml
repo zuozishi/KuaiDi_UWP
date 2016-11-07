@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="KuaiDi.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KuaiDi"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox Name="kd_name" Margin="5,10" PlaceholderText="名称"></TextBox>
+        <TextBox Name="kd_num" Margin="5,10" PlaceholderText="快递单号"></TextBox>
+        <StackPanel Orientation="Horizontal">
+            <ComboBox Name="KuaiDicombox" Margin="5,10"></ComboBox>
+            <Button Margin="5,10" Click="SaveKuaiDiData">保存</Button>
+            <Button Margin="5,10" Click="DelKuaiDiData">清除</Button>
+        </StackPanel>
+    </StackPanel>
+</Page>
